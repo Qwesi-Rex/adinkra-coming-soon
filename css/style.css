@@ -383,7 +383,7 @@ h1, h2, h3, h4, h5, h6, figure {
   
   .simply-countdown-one {
     margin-bottom: 30px;
-    margin-left: 20px;
+    margin-left: 5px;
     float: center;
     width: 100%; }
     .simply-countdown-one .simply-section {
@@ -401,12 +401,13 @@ h1, h2, h3, h4, h5, h6, figure {
         line-height: 100px; }
         @media screen and (max-width: 768px) {
           .simply-countdown-one .simply-section .simply-amount {
-            font-size: 30px;
+            font-size: 20px;
             line-height: 30px; } }
       .simply-countdown-one .simply-section .simply-word {
         display: block;
         text-align: center;
-        font-weight: 700;
+        font-weight: 500;
+        font-size: 15px ;
         color: #a7a7a7; }
   
   .content-box {
@@ -551,6 +552,7 @@ h1, h2, h3, h4, h5, h6, figure {
     font-size: 16px;
     line-height: 1.7;
     color: #828282;
+    overflow-x: hidden;
     background: #fff; }
   
   #page {
