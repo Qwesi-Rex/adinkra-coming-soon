@@ -86,15 +86,27 @@
 	};
 
 	var countDown = function() {
-
-		var d = new Date(new Date().getTime() + 800 * 12 * 120 * 2000);
+		// Calculate the target date, which is two weeks (14 days) from now
+		var currentDate = new Date();
+		var targetDate = new Date(currentDate.getTime() + (21 * 24 * 60 * 60 * 1000)); // Add 14 days in milliseconds
+	
+		// Set up the countdown timer with the target date
 		simplyCountdown('.simply-countdown-one', {
-			year: d.getFullYear(),
-			month: d.getMonth() - 7,
-			day: d.getDate()
+			year: targetDate.getFullYear(),
+			month: targetDate.getMonth() + 1, // Months are zero-indexed, so we add 1 to get the correct month
+			day: targetDate.getDate(),
+			hours: targetDate.getHours(),
+			minutes: targetDate.getMinutes(),
+			seconds: targetDate.getSeconds(),
 		});
-
 	};
+	
+
+	
+	
+
+
+	
 	
 	
 	
